@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_form_component_radio_items",
+  "info": {
+    "displayName": "radio_item",
+    "icon": "typhoon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

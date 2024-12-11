@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_my_component_banners",
+  "info": {
+    "displayName": "Banners",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "banners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared-component.banner"
+    }
+  }
+}

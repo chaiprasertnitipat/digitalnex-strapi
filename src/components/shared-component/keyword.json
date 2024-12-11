@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_component_keywords",
+  "info": {
+    "displayName": "keyword",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "keyword": {
+      "type": "string"
+    }
+  }
+}

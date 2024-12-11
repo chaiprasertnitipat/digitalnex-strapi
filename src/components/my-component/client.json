@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_my_component_clients",
+  "info": {
+    "displayName": "Client",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "section_layout": {
+      "type": "enumeration",
+      "enum": [
+        "Horizontal ",
+        "Vertical ",
+        "Vertical - Logo slide"
+      ],
+      "required": true
+    },
+    "listing_column": {
+      "type": "integer",
+      "max": 10,
+      "min": 0,
+      "default": 0
+    },
+    "listing_background": {
+      "type": "enumeration",
+      "enum": [
+        "White",
+        "Light grey",
+        "Dark grey",
+        "Black"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.title"
+    },
+    "listing_content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-component.image"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    }
+  }
+}

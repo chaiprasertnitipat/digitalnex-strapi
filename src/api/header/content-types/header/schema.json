@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "Container",
+        "Fullwidth"
+      ]
+    },
+    "Theme": {
+      "type": "enumeration",
+      "enum": [
+        "Classic - Transparent Background",
+        "Classic - Transparent Background - Light Text",
+        "Classic - Light Background",
+        "Classic - Dark Background",
+        "Center Nav - Transparent Background",
+        "Center Nav - Transparent Background - Light Text",
+        "Center Nav - Light Background",
+        "Center Nav - Dark Background",
+        "Center Nav - Fancy",
+        "Extended",
+        "Extended - Logo center",
+        "Extended - Alternative"
+      ]
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "search": {
+      "type": "boolean",
+      "default": false
+    },
+    "social": {
+      "type": "boolean",
+      "default": false
+    },
+    "languages": {
+      "type": "boolean",
+      "default": false
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared-component.button"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::web-menu.web-menu"
+    }
+  }
+}

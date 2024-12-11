@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_component_menu_3s",
+  "info": {
+    "displayName": "menu-3",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "list_menu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.list-menu"
+    }
+  }
+}

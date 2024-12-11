@@ -1,0 +1,104 @@
+{
+  "collectionName": "components_my_component_feature_images",
+  "info": {
+    "displayName": "Feature-image",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "section_layout": {
+      "type": "enumeration",
+      "enum": [
+        "Container",
+        "Fullwidth"
+      ],
+      "required": true
+    },
+    "section_display": {
+      "type": "enumeration",
+      "enum": [
+        "Vertical",
+        "Horizontal - Content 50% | Listing 50%",
+        "Horizontal - Content 30% | Listing 70%"
+      ],
+      "required": true
+    },
+    "listing_style": {
+      "type": "enumeration",
+      "enum": [
+        "Style 1",
+        "Style 2",
+        "Style 3"
+      ],
+      "required": true
+    },
+    "roll_over_card_style": {
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "style 1"
+      ],
+      "required": true
+    },
+    "listing_content_position": {
+      "type": "enumeration",
+      "enum": [
+        "Top - Left",
+        "Top - Center",
+        "Top - Right",
+        "Middle - Left",
+        "Middle - Center",
+        "Middle - Right",
+        "Bottom - Left",
+        "Bottom - Center",
+        "Bottom - Right"
+      ],
+      "required": true
+    },
+    "listing_column_desktop": {
+      "type": "integer",
+      "max": 10,
+      "min": 0,
+      "default": 0
+    },
+    "listing_column_mobile": {
+      "type": "integer",
+      "max": 10,
+      "min": 0,
+      "default": 0
+    },
+    "listing_slide_desktop": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "listing_slide_mobile": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "listing_space": {
+      "type": "string"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.title"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.button"
+    },
+    "listing_content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-component.card"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    }
+  }
+}

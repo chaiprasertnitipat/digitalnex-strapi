@@ -1,0 +1,91 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menus": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.menus"
+    },
+    "Layout": {
+      "type": "enumeration",
+      "enum": [
+        "Container",
+        "Fullwidth"
+      ]
+    },
+    "Theme": {
+      "type": "enumeration",
+      "enum": [
+        "Classic - Light Background",
+        "Classic - Dark Background"
+      ]
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Company_name": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Social": {
+      "type": "boolean",
+      "default": false
+    },
+    "Subscribe": {
+      "type": "boolean",
+      "default": false
+    },
+    "Copy_right": {
+      "type": "string"
+    },
+    "Navigate_1": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::web-menu.web-menu"
+    },
+    "Navigate_2": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::web-menu.web-menu"
+    },
+    "Navigate_3": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::web-menu.web-menu"
+    },
+    "Navigate_4": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::web-menu.web-menu"
+    },
+    "Navigate_policy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::web-menu.web-menu"
+    }
+  }
+}

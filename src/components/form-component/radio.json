@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_form_component_radios",
+  "info": {
+    "displayName": "radio",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form-component.radio-item"
+    },
+    "field_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-component.field-setting"
+    }
+  }
+}

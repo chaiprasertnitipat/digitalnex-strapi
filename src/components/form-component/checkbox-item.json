@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_form_component_checkbox_items",
+  "info": {
+    "displayName": "checkbox_item",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "name_attribute": {
+      "type": "string"
+    },
+    "id_attribute": {
+      "type": "string"
+    }
+  }
+}

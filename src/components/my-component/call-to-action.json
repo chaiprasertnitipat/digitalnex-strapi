@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_my_component_call_to_actions",
+  "info": {
+    "displayName": "Call to action",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "design": {
+      "type": "enumeration",
+      "enum": [
+        "BG Transparent",
+        "BG Container",
+        "BG Fullwidth",
+        "BG Fullwidth with frame"
+      ],
+      "required": true
+    },
+    "background": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.background"
+    },
+    "nexitor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.nexitor"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    }
+  }
+}

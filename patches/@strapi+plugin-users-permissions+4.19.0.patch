@@ -1,0 +1,115 @@
+diff --git a/node_modules/@strapi/plugin-users-permissions/server/bootstrap/grant-config.js b/node_modules/@strapi/plugin-users-permissions/server/bootstrap/grant-config.js
+index 31c612c..1f66778 100644
+--- a/node_modules/@strapi/plugin-users-permissions/server/bootstrap/grant-config.js
++++ b/node_modules/@strapi/plugin-users-permissions/server/bootstrap/grant-config.js
+@@ -13,8 +13,16 @@ module.exports = (baseURL) => ({
+     callback: `${baseURL}/discord/callback`,
+     scope: ['identify', 'email'],
+   },
++  keycloak: {
++    enabled: true,
++    icon: 'envelope',
++    key: '',
++    secret: '',
++    callback: `${baseURL}/keycloak/callback`,
++    scope: ['email'],
++  },
+   facebook: {
+-    enabled: false,
++    enabled: true,
+     icon: 'facebook-square',
+     key: '',
+     secret: '',
+@@ -22,7 +30,7 @@ module.exports = (baseURL) => ({
+     scope: ['email'],
+   },
+   google: {
+-    enabled: false,
++    enabled: true,
+     icon: 'google',
+     key: '',
+     secret: '',
+diff --git a/node_modules/@strapi/plugin-users-permissions/server/services/providers-registry.js b/node_modules/@strapi/plugin-users-permissions/server/services/providers-registry.js
+index 875b4e9..d1cf246 100644
+--- a/node_modules/@strapi/plugin-users-permissions/server/services/providers-registry.js
++++ b/node_modules/@strapi/plugin-users-permissions/server/services/providers-registry.js
+@@ -71,6 +71,53 @@ const getInitialProviders = ({ purest }) => ({
+       email: tokenPayload.email,
+     };
+   },
++
++  async keycloak({ accessToken }) {
++
++	console.log("--accessToken--");
++	console.log(accessToken);
++
++      const pluginStore = strapi.store({
++        type: "plugin",
++        name: "users-permissions",
++      });
++
++	console.log("--1--");
++
++      const storedGrantConfig = (await pluginStore.get({ key: "grant" })) || {};
++
++	console.log("--2--");
++
++      const keycloak = purest({
++        provider: "keycloak",
++      });
++
++	console.log("--3--");
++	console.log("--subdomain--");
++	console.log(storedGrantConfig.keycloak.subdomain);
++
++      /*return keycloak
++        .subdomain(storedGrantConfig.keycloak.subdomain)
++        .get("protocol/openid-connect/userinfo")
++        .auth(accessToken)
++        .request()
++        .then(({ body }) => {
++	  console.log("--4--");
++          console.log(body);
++          return {
++	    username: body["preferred_username"],
++            email: body.email,
++          }
++        });*/
++
++	var ret = JSON.parse(Buffer.from(accessToken.split('.')[1], 'base64').toString());
++	console.log("--ret--");
++	ret["username"] = ret["preferred_username"];
++	console.log(ret);
++
++	return ret;
++  },
++
+   async facebook({ accessToken }) {
+     const facebook = purest({ provider: 'facebook' });
+ 
+@@ -87,15 +134,21 @@ const getInitialProviders = ({ purest }) => ({
+   async google({ accessToken }) {
+     const google = purest({ provider: 'google' });
+ 
++	console.log("--accessToken--");
++	console.log(accessToken);
++
+     return google
+       .query('oauth')
+       .get('tokeninfo')
+       .qs({ accessToken })
+       .request()
+-      .then(({ body }) => ({
+-        username: body.email.split('@')[0],
+-        email: body.email,
+-      }));
++      .then(({ body }) => {
++	console.log(body);
++	return {
++          username: body.email.split('@')[0],
++          email: body.email,
++        };
++      });
+   },
+   async github({ accessToken }) {
+     const github = purest({

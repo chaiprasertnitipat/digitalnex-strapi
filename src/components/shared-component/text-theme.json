@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_component_text_themes",
+  "info": {
+    "displayName": "text-theme",
+    "icon": "brush",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "theme_name": {
+      "type": "string"
+    },
+    "color_default_text": {
+      "type": "string"
+    },
+    "color_hover_text": {
+      "type": "string"
+    }
+  }
+}

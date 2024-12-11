@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_component_buttons2",
+  "info": {
+    "displayName": "buttons",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared-component.button"
+    }
+  }
+}

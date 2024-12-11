@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_component_nexitors",
+  "info": {
+    "displayName": "nexitor",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.title"
+    },
+    "editor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.editor"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.buttons"
+    },
+    "alignment": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.alignment"
+    }
+  }
+}

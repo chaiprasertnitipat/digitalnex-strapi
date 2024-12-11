@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_my_component_feature_lists",
+  "info": {
+    "displayName": "Feature-list",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "listing_design": {
+      "type": "enumeration",
+      "enum": [
+        "Check",
+        "Number",
+        "Arrow"
+      ],
+      "required": true
+    },
+    "listing_column": {
+      "type": "enumeration",
+      "enum": [
+        "one col",
+        "two col",
+        "three col",
+        "four col"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.title"
+    },
+    "listing_content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-component.content"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    }
+  }
+}

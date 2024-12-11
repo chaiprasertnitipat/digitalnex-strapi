@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_component_buttons",
+  "info": {
+    "displayName": "button",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "button_style": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.button-theme"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.link"
+    },
+    "Button_name": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_menus",
+  "info": {
+    "singularName": "web-menu",
+    "pluralName": "web-menus",
+    "displayName": "Web Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name_menu": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared-component.menu",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

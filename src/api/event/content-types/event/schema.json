@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "Event",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "thumb": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.image-2-device"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.editor"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "my-component.about",
+        "my-component.banners",
+        "my-component.call-to-action",
+        "my-component.client",
+        "my-component.content-with-image",
+        "my-component.content",
+        "my-component.faqs",
+        "my-component.feature-icon",
+        "my-component.feature-image",
+        "my-component.feature-list",
+        "my-component.image",
+        "my-component.project",
+        "my-component.team",
+        "my-component.testimonial",
+        "my-component.video"
+      ]
+    },
+    "tag": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared-component.keyword"
+    },
+    "highlight": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "relate_by_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event.event"
+    }
+  }
+}

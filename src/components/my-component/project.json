@@ -1,0 +1,76 @@
+{
+  "collectionName": "components_my_component_projects",
+  "info": {
+    "displayName": "Project",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "section_layout": {
+      "type": "enumeration",
+      "enum": [
+        "Container",
+        "Fullwidth"
+      ],
+      "required": true
+    },
+    "section_display": {
+      "type": "enumeration",
+      "enum": [
+        "Content 50% | Listing 50%",
+        "Content 30% | Listing 70%",
+        "Content 70% | Listing 30%"
+      ],
+      "required": true
+    },
+    "listing_style": {
+      "type": "enumeration",
+      "enum": [
+        "Style 1",
+        "Style 2",
+        "Style 3"
+      ],
+      "required": true
+    },
+    "listing_switch_positions": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "listing_background": {
+      "type": "enumeration",
+      "enum": [
+        "Transparent background",
+        "Light background",
+        "Dark background",
+        "Color background"
+      ],
+      "required": true,
+      "default": "Transparent background"
+    },
+    "listing_background_color": {
+      "type": "string"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.title"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.button"
+    },
+    "listing_content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-component.extra"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    }
+  }
+}

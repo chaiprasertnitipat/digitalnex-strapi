@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_component_alignments",
+  "info": {
+    "displayName": "alignment",
+    "icon": "layer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_align_horizontal_desktop": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Center",
+        "Right"
+      ],
+      "default": "Left",
+      "required": false
+    },
+    "text_align_horizontal_mobile": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Center",
+        "Right"
+      ],
+      "default": "Left",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "collectionName": "components_my_component_teams",
+  "info": {
+    "displayName": "Team",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "section_layout": {
+      "type": "enumeration",
+      "enum": [
+        "Container",
+        "Fullwidth"
+      ],
+      "default": "Container",
+      "required": true
+    },
+    "listing_style": {
+      "type": "enumeration",
+      "enum": [
+        "Style 1",
+        "Style 2",
+        "Style 3"
+      ],
+      "default": "Style 1",
+      "required": true
+    },
+    "listing_alignment": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Center",
+        "Right"
+      ],
+      "default": "Left",
+      "required": true
+    },
+    "listing_column_desktop": {
+      "type": "integer",
+      "max": 10,
+      "min": 0,
+      "default": 0
+    },
+    "listing_column_mobile": {
+      "type": "integer",
+      "max": 10,
+      "min": 0,
+      "default": 0
+    },
+    "listing_slide_desktop": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "listing_slide_mobile": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "listing_space": {
+      "type": "string"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.title"
+    },
+    "listing_content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-component.card-no-link"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    }
+  }
+}

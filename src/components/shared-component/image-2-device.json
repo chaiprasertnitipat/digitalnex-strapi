@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_component_image_2_devices",
+  "info": {
+    "displayName": "image-2-device",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "image_d": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image_m": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

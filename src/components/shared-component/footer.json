@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_component_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "footer": {
+      "type": "richtext"
+    }
+  }
+}

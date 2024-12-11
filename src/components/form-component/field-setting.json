@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_form_component_field_settings",
+  "info": {
+    "displayName": "field_setting",
+    "icon": "cog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "is_required": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "name_attribute": {
+      "type": "string"
+    },
+    "id_attribute": {
+      "type": "string"
+    }
+  }
+}

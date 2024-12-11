@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_component_links",
+  "info": {
+    "displayName": "link",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": false
+    },
+    "link_url": {
+      "type": "string"
+    },
+    "new_window": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_component_slugs",
+  "info": {
+    "displayName": "slug",
+    "icon": "strikeThrough"
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    }
+  }
+}

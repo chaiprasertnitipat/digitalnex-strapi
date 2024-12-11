@@ -1,0 +1,94 @@
+{
+  "collectionName": "components_my_component_abouts",
+  "info": {
+    "displayName": "About",
+    "icon": "information",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "listing_style": {
+      "type": "enumeration",
+      "enum": [
+        "Icon",
+        "Value",
+        "Check",
+        "Number",
+        "Accordion"
+      ],
+      "required": true
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "No image",
+        "Image first",
+        "Content first"
+      ],
+      "required": true
+    },
+    "listing_column": {
+      "type": "enumeration",
+      "enum": [
+        "one col",
+        "two col",
+        "three col",
+        "four col"
+      ],
+      "required": true
+    },
+    "listing_display": {
+      "type": "enumeration",
+      "enum": [
+        "Vertical",
+        "Horizontal"
+      ],
+      "required": true
+    },
+    "listing_alignment": {
+      "type": "enumeration",
+      "enum": [
+        "Left",
+        "Center",
+        "Right"
+      ],
+      "required": true
+    },
+    "listing_content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "listing-component.card-no-link"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.title"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.editor"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.button"
+    }
+  }
+}

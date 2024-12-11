@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "custom_codes",
+  "info": {
+    "singularName": "custom-code",
+    "pluralName": "custom-codes",
+    "displayName": "Coding",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code_header": {
+      "type": "customField",
+      "options": {
+        "language": "html"
+      },
+      "customField": "plugin::strapi-code-editor-custom-field.code-editor-text"
+    },
+    "code_body": {
+      "type": "customField",
+      "options": {
+        "language": "html"
+      },
+      "customField": "plugin::strapi-code-editor-custom-field.code-editor-text"
+    },
+    "code_footer": {
+      "type": "customField",
+      "options": {
+        "language": "html"
+      },
+      "customField": "plugin::strapi-code-editor-custom-field.code-editor-text"
+    }
+  }
+}

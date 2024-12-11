@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popup_events",
+  "info": {
+    "singularName": "popup-event",
+    "pluralName": "popup-events",
+    "displayName": "Popup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.nexitor"
+    },
+    "start_date": {
+      "type": "datetime"
+    },
+    "end_date": {
+      "type": "datetime"
+    }
+  }
+}

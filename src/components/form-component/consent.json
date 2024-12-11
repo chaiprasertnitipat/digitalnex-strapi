@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_form_component_consents",
+  "info": {
+    "displayName": "consent",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "field_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-component.field-setting"
+    }
+  }
+}

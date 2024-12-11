@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_component_videos",
+  "info": {
+    "displayName": "video",
+    "icon": "slideshow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video_type": {
+      "type": "enumeration",
+      "enum": [
+        "Youtube",
+        "Upload file (Mp4)"
+      ],
+      "default": "Youtube",
+      "required": true
+    },
+    "youtube_id": {
+      "type": "string"
+    },
+    "upload_file_mp4": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

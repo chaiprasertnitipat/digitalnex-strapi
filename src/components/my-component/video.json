@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_my_component_videos",
+  "info": {
+    "displayName": "Video",
+    "icon": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.video"
+    },
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.title"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    }
+  }
+}

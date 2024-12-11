@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_component_sec_settings",
+  "info": {
+    "displayName": "section-setting",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "background": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.background"
+    },
+    "padding_set": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.padding-set"
+    },
+    "custom_css": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.editor"
+    }
+  }
+}

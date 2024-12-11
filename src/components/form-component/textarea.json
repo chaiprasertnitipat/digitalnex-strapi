@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_form_component_textareas",
+  "info": {
+    "displayName": "textarea",
+    "icon": "strikeThrough",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "placeholder": {
+      "type": "string"
+    },
+    "min_length": {
+      "type": "integer"
+    },
+    "max_length": {
+      "type": "integer"
+    },
+    "value_type": {
+      "type": "enumeration",
+      "enum": [
+        "Freeform",
+        "Number",
+        "Phone",
+        "Email"
+      ],
+      "required": true
+    },
+    "rows": {
+      "type": "integer"
+    },
+    "field_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-component.field-setting"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_form_component_checkboxes",
+  "info": {
+    "displayName": "checkbox",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form-component.checkbox-item"
+    },
+    "field_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-component.field-setting"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "collectionName": "components_shared_component_banners",
+  "info": {
+    "displayName": "banner",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "banner_name": {
+      "type": "string"
+    },
+    "banner_type": {
+      "type": "enumeration",
+      "enum": [
+        "Image",
+        "Video"
+      ],
+      "required": true
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.image-2-device"
+    },
+    "video_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.video"
+    },
+    "banner_content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.nexitor"
+    },
+    "content_position_desktop": {
+      "type": "enumeration",
+      "enum": [
+        "Top - Left",
+        "Top - Center",
+        "Top - Right",
+        "Middle - Left",
+        "Middle - Center",
+        "Middle - Right",
+        "Bottom - Left",
+        "Bottom - Center",
+        "Bottom - Right"
+      ],
+      "required": true
+    },
+    "content_position_mobile": {
+      "type": "enumeration",
+      "enum": [
+        "Top - Left",
+        "Top - Center",
+        "Top - Right",
+        "Middle - Left",
+        "Middle - Center",
+        "Middle - Right",
+        "Bottom - Left",
+        "Bottom - Center",
+        "Bottom - Right"
+      ],
+      "required": true
+    }
+  }
+}

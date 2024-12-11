@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_component_themes",
+  "info": {
+    "displayName": "theme",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "Primary",
+        "Secondary",
+        "Third"
+      ],
+      "default": "Primary",
+      "required": true
+    }
+  }
+}

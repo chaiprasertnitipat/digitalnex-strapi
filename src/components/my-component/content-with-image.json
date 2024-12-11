@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_my_component_content_with_images",
+  "info": {
+    "displayName": "Content with Image",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "content_layout_desktop": {
+      "type": "enumeration",
+      "enum": [
+        "Content with Image left",
+        "Content with Image right"
+      ]
+    },
+    "content_layout_mobile": {
+      "type": "enumeration",
+      "enum": [
+        "Image first",
+        "Content first"
+      ]
+    },
+    "nexitor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.nexitor"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.image-2-device"
+    },
+    "section_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.section-setting"
+    }
+  }
+}

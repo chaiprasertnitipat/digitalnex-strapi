@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_shared_component_padding_sets",
+  "info": {
+    "displayName": "padding-set",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "padding_top_d": {
+      "type": "string"
+    },
+    "padding_right_d": {
+      "type": "string"
+    },
+    "padding_bottom_d": {
+      "type": "string"
+    },
+    "padding_left_d": {
+      "type": "string"
+    },
+    "padding_top_m": {
+      "type": "string"
+    },
+    "padding_right_m": {
+      "type": "string"
+    },
+    "padding_bottom_m": {
+      "type": "string"
+    },
+    "padding_left_m": {
+      "type": "string"
+    }
+  }
+}

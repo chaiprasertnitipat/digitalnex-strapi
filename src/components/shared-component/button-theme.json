@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_shared_component_button_themes",
+  "info": {
+    "displayName": "button-theme",
+    "icon": "brush",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "button_style": {
+      "type": "enumeration",
+      "enum": [
+        "Button",
+        "Text Link"
+      ],
+      "required": false,
+      "default": "Button"
+    },
+    "button_theme": {
+      "type": "enumeration",
+      "enum": [
+        "Primary",
+        "Secondary",
+        "Third",
+        "Light",
+        "Dark",
+        "Disable"
+      ],
+      "required": false
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "Arrow right",
+        "Arrow left",
+        "Account",
+        "Link",
+        "Calendar",
+        "Download",
+        "Document",
+        "Email",
+        "Folder",
+        "Map marker",
+        "Phone",
+        "Tag"
+      ],
+      "required": false
+    },
+    "icon_position": {
+      "type": "enumeration",
+      "enum": [
+        "Icon left",
+        "Icon right"
+      ],
+      "required": false
+    }
+  }
+}

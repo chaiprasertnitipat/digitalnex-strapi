@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_component_radii",
+  "info": {
+    "displayName": "Radius",
+    "icon": "collapse",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "radius_default": {
+      "type": "decimal",
+      "default": 0,
+      "unique": false,
+      "max": 10,
+      "min": 0
+    },
+    "radius_card": {
+      "type": "decimal",
+      "default": 0,
+      "max": 10,
+      "min": 0
+    },
+    "radius_button": {
+      "type": "decimal",
+      "default": 0,
+      "max": 10,
+      "min": 0
+    }
+  }
+}

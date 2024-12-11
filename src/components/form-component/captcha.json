@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_form_component_captchas",
+  "info": {
+    "displayName": "captcha",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "field_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "form-component.field-setting"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_shared_component_backgrounds",
+  "info": {
+    "displayName": "background",
+    "icon": "brush",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "background_color": {
+      "type": "string"
+    },
+    "background_image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.image-2-device"
+    },
+    "background_repeat": {
+      "type": "enumeration",
+      "enum": [
+        "No repeat",
+        "Repeat all",
+        "Repeat X",
+        "Repeat Y"
+      ],
+      "required": true
+    },
+    "background_size": {
+      "type": "enumeration",
+      "enum": [
+        "Cover",
+        "Contain",
+        "Auto"
+      ],
+      "required": true
+    },
+    "background_fixed": {
+      "type": "enumeration",
+      "enum": [
+        "Static",
+        "Fixed"
+      ],
+      "required": true
+    },
+    "content_theme": {
+      "type": "enumeration",
+      "enum": [
+        "Dark",
+        "Light"
+      ],
+      "required": true
+    },
+    "Common_background": {
+      "type": "enumeration",
+      "enum": [
+        "Primary",
+        "Secondary"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_component_headers",
+  "info": {
+    "displayName": "header",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "richtext"
+    }
+  }
+}

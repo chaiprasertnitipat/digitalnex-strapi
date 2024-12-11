@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_component_backend_menus",
+  "info": {
+    "displayName": "backend-menu",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Collection",
+        "Single"
+      ],
+      "default": "Collection",
+      "required": true
+    }
+  }
+}

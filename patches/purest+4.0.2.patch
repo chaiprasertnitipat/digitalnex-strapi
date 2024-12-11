@@ -1,0 +1,21 @@
+diff --git a/node_modules/purest/config/providers.json b/node_modules/purest/config/providers.json
+index 8dd1dae..e9fd8ce 100644
+--- a/node_modules/purest/config/providers.json
++++ b/node_modules/purest/config/providers.json
+@@ -1363,14 +1363,14 @@
+   },
+   "keycloak": {
+     "default": {
+-      "origin": "https://{subdomain}",
++      "origin": "https://directus.digitalnex.com/",
+       "path": "{path}",
+       "headers": {
+         "authorization": "Bearer {auth}"
+       }
+     },
+     "oauth": {
+-      "origin": "https://{subdomain}",
++      "origin": "https://directus.digitalnex.com/",
+       "path": "protocol/openid-connect/{path}"
+     }
+   },

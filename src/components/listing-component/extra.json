@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_listing_component_extras",
+  "info": {
+    "displayName": "extra",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.image-2-device"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.alignment"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared-component.link"
+    }
+  }
+}

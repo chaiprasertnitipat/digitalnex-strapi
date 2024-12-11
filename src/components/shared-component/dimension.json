@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_component_dimensions",
+  "info": {
+    "displayName": "dimension",
+    "icon": "expand"
+  },
+  "options": {},
+  "attributes": {
+    "x_desktop": {
+      "type": "string"
+    },
+    "y_desktop": {
+      "type": "string"
+    },
+    "x_mobile": {
+      "type": "string"
+    },
+    "y_mobile": {
+      "type": "string"
+    }
+  }
+}

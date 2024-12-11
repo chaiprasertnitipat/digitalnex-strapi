@@ -1,0 +1,116 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news2",
+  "info": {
+    "singularName": "news",
+    "pluralName": "news2",
+    "displayName": "News",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "thumb": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared-component.image-2-device"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared-component.editor"
+    },
+    "blocks": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "my-component.about",
+        "my-component.banners",
+        "my-component.call-to-action",
+        "my-component.client",
+        "my-component.content-with-image",
+        "my-component.content",
+        "my-component.faqs",
+        "my-component.feature-icon",
+        "my-component.feature-image",
+        "my-component.feature-list",
+        "my-component.image",
+        "my-component.project",
+        "my-component.team",
+        "my-component.testimonial",
+        "my-component.video"
+      ]
+    },
+    "tag": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared-component.keyword"
+    },
+    "highlight": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "relate_by_contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news.news"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo"
+    }
+  }
+}
