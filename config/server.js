@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', 'localhost'),
-  port: env.int('PORT', 10000),
-  url: 'http://localhost:10000', 
+  host: env('HOST', '0.0.0.0'),
+  port: env.int('PORT', 3000),
+  //url: 'http://localhost:3000', 
        //'https://profound-kit-finer.ngrok-free.app',
   app: {
     keys: env.array('APP_KEYS'),
